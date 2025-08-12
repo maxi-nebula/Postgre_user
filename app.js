@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
   res.send("postgre app coming up");
 });
 
-app.use("/", getUsernamesRouter);
+app.use("/allUsers", getUsernamesRouter);
 app.use("/newuser", newUserRouter);
 app.use("/saveuser", saveUserToDBRouter);
 
